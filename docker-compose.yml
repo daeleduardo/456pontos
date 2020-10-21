@@ -1,0 +1,20 @@
+version: '3.7'
+
+volumes:
+    logs:
+        driver: local
+
+services:
+    456pontos:
+        build: .
+        image: 456pontos
+        container_name: 456pontos
+        working_dir: /var/www
+        command: php -S 0.0.0.0:8080 -t public
+        environment:
+            docker: "true"
+        ports:
+            - 8080:8080
+        volumes:
+            - .:/var/www
+            - logs:/var/www/logs
