@@ -121,6 +121,7 @@ var app = new Vue({
 	chamarServico: function(urlServico,callback =null) {
 		    this.emPesquisa = true;
             let xhr = new XMLHttpRequest();
+			console.log(urlServico);
 			xhr.open("GET", urlServico);
 			xhr.setRequestHeader("Authorization", "HEEPwHXmqNMppXb8d8R2UJdKpq2s27AL")
 			xhr.setRequestHeader("Content-Type", "application/javascript; charset=utf-8")
