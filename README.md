@@ -11,6 +11,8 @@ Os critérios para agregação dos voos foram:
 * Preço da passagem.
 * Se é um voo de ida ou volta.
 
+Caso queira testar em produção clique neste [link](https://lumen456pontos.herokuapp.com/)
+
 
 ## API
 
