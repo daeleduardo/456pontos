@@ -19,6 +19,7 @@ $router->get('/', function () use ($router) {
 
 $router->group(['middleware' => 'auth'], function () use ($router) {
     $router->get('/buscarGruposVoos', ['uses' => 'GrupoVooController@buscarGruposVoos']);
+    $router->option('/buscarGruposVoos', ['uses' => 'GrupoVooController@buscarGruposVoos']);
     $router->get('/buscarLocais', ['uses' => 'Mock@buscarLocais']);
 
 });

@@ -145,12 +145,19 @@ class GrupoVooController extends Controller
         ];
     }
 
-    /*
-    Com base nos destinos infomados:
-     * Busca os voos disponíveis
-     * Monta os grupos de voo
-     * Ordena pelo mais barato
-     */
+/**
+ * @api {get} /buscarGruposVoos?origem=:origem&destino=:destino Buscar dados agrupados de voo
+ * @apiName buscarGruposVoos
+ * @apiGroup GruposVoo
+ *
+ * @apiParam {String} origem    Aeroporto de origem
+ * @apiParam {String} destino   Aeroporto de destino
+ *
+ * @apiHeader (buscarGruposVoos) {String} Authorization="" Token de autorização para consumir a API, neste exemplo o token e <code>HEEPwHXmqNMppXb8d8R2UJdKpq2s27AL</code>
+ * @apiHeader (buscarGruposVoos) {String} Content-Type=""  <code>application/javascript; charset=utf-8</code>
+ * 
+ * @apiSampleRequest https://lumen456pontos.herokuapp.com/buscarGruposVoos?
+ */
     public function buscarGruposVoos(Request $request)
     {
         list($voosOrigem, $voosDestino) = $this->buscarDadosVoosServico($request);
