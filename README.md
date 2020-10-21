@@ -16,7 +16,7 @@ Caso queira testar em produção clique neste [link](https://lumen456pontos.hero
 
 ## API
 
-A consulta pode ser feita em forma de API, para mais informações, acesse esta [documentação](https://opensource.org/licenses/MIT).
+A consulta pode ser feita em forma de API, para mais informações, acesse esta [documentação](https://lumen456pontos.herokuapp.com/apidoc/index.html).
 
 ## Uso para desenvolvimento.
 
