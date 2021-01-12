@@ -7,6 +7,7 @@ use Illuminate\Contracts\Auth\Factory as Auth;
 
 class Authenticate
 {
+
     /**
      * The authentication guard factory instance.
      *
@@ -25,31 +26,24 @@ class Authenticate
         $this->auth = $auth;
     }
 
+
     /**
-     * Handle an incoming request.
+     * Manipula as requisições, validando se as requisições a serviços restritos são válidos.
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \Closure  $next
-     * @param  string|null  $guard
      * @return mixed
      */
-    public function handle($request, Closure $next, $guard = null)
+    public function handle($request, Closure $next)
     {
-        /*
-        if ($this->auth->guard($guard)->guest()) {
-            return response('Unauthorized.', 401);
-        }
-
-        return $next($request);
-        */
 
         if(!$request->headers->has('Authorization')){
             return response('Unauthorized.', 401);
-        };
+        }
         
         if($request->header("Authorization") != getenv("API_TOKEN")){
             return response('Forbidden.', 403);
-        };
+        }
 
         return $next($request);
 

@@ -13,13 +13,13 @@
 |
  */
 
-$router->get('/', function () use ($router) {
+$router->get('/', function () {
     return view("index");
 });
 
 $router->group(['middleware' => 'auth'], function () use ($router) {
-    $router->get('/buscarGruposVoos', ['uses' => 'GrupoVooController@buscarGruposVoos']);
-    $router->options('/buscarGruposVoos', ['uses' => 'GrupoVooController@buscarGruposVoos']);
-    $router->get('/buscarLocais', ['uses' => 'Mock@buscarLocais']);
+    $router->get('/gruposVoos', ['uses' => 'GrupoVooController@gruposVoos']);
+    $router->options('/gruposVoos', ['uses' => 'GrupoVooController@gruposVoos']);
+    $router->get('/locais', ['uses' => 'MockController@buscarLocais']);
 
 });
