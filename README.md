@@ -11,12 +11,9 @@ Os critérios para agregação dos voos foram:
 * Preço da passagem.
 * Se é um voo de ida ou volta.
 
-Caso queira testar em produção clique neste [link](https://lumen456pontos.herokuapp.com/)
-
-
 ## API
 
-A consulta pode ser feita em forma de API, para mais informações, acesse esta [documentação](https://lumen456pontos.herokuapp.com/apidoc/index.html).
+A consulta pode ser feita em forma de API, para mais informações, acessando endereço: ```localhost:8080/apidoc/index.html```
 
 ## Uso para desenvolvimento.
 
@@ -29,7 +26,6 @@ Para executar a aplicação localmente, após realizar o download do projeto, ac
  ***PHP Server:***
 
  ```php -S 0.0.0.0:8080 -t public```
-
 
 
 ## License

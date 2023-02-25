@@ -27,7 +27,7 @@ define({ "api": [
     },
     "sampleRequest": [
       {
-        "url": "https://lumen456pontos.herokuapp.com/gruposVoos?"
+        "url": "localhost/gruposVoos?"
       }
     ],
     "version": "0.0.0",

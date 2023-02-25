@@ -24,7 +24,7 @@ class GrupoVooController extends BaseController
  * @apiHeader (gruposVoos) {String} Authorization="" Token de autorização para consumir a API, neste exemplo o token e <code>HEEPwHXmqNMppXb8d8R2UJdKpq2s27AL</code>
  * @apiHeader (gruposVoos) {String} Content-Type=""  <code>application/javascript; charset=utf-8</code>
  * 
- * @apiSampleRequest https://lumen456pontos.herokuapp.com/gruposVoos
+ * @apiSampleRequest localhost:8080/gruposVoos
  */
     public function gruposVoos(Request $requisicao )
     {
